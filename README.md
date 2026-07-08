@@ -1,6 +1,6 @@
 # FreeRTOS Kernel Modification: Earliest Deadline First (EDF) Scheduling & Priority Inheritance Protocol (PIP)
 
-A custom, low-overhead modification of the FreeRTOS kernel for the ESP32 (ESP-IDF framework). This project replaces the native static fixed-priority scheduler with a dynamic **Earliest Deadline First (EDF)** scheduling algorithm and integrates a **Deadline Inheritance Protocol (PIP)** to prevent deadline inversion during resource contention.
+Modification of the FreeRTOS kernel for the ESP32 (ESP-IDF framework). This project replaces the native static fixed-priority scheduler with a dynamic **Earliest Deadline First (EDF)** scheduling algorithm and integrates a **Deadline Inheritance Protocol (PIP)** to prevent deadline inversion during resource contention.
 
 Developed as part of my Bachelor's Thesis: *"Earliest Deadline First Scheduling and Deadline Inheritance in FreeRTOS"*.
 
