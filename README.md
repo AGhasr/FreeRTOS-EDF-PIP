@@ -45,24 +45,6 @@ The modified kernel is isolated inside the local `components/` block to bypass s
 
 ```
 
-## Simple Demo (`main.c`)
-
-The testbench application spins up three tasks modeling classic real-time workloads with distinct urgency tiers and constraints:
-
-* **Task L (Low Urgency):** Base Deadline = 1000ms | Execution Budget = 500ms
-* **Task M (Medium Urgency):** Base Deadline = 800ms | Execution Budget = 300ms
-* **Task H (High Urgency):** Base Deadline = 600ms | Execution Budget = 100ms
-
-
-The application demonstrates:
-
-- EDF task ordering
-- Dynamic preemption
-- Deadline inheritance during mutex contention
-- Correct restoration after mutex release
-
----
-
 ## Building
 
 This project uses the **ESP-IDF** build system.
@@ -78,3 +60,9 @@ idf.py build
 ```bash
 idf.py -p <PORT> flash monitor
 ```
+
+## License
+
+Licensed under the **[MIT License](./LICENSE)**.
+
+*Note: This project is part of my Bachelor's Thesis.*
